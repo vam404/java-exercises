@@ -1,4 +1,4 @@
-package Utils;
+package com.vam404.Utils;
 
 import java.util.Arrays;
 

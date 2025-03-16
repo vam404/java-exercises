@@ -1,3 +1,5 @@
+package com.vam404;
+
 import java.util.Scanner;
 
 public class Exercise1 {

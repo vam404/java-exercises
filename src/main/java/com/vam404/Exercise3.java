@@ -1,11 +1,15 @@
+package com.vam404;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Exercise3 {
     public static void main (String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
 
+            // Read the input from the user
             String input = scanner.nextLine();
+            // Split the input into an array of strings
             String[] inputArr = input.split(" ");
 
             // Convert String[] to ArrayList<Integer>
@@ -24,10 +28,10 @@ public class Exercise2 {
             int[] arrInt = arr.stream().mapToInt(Integer::intValue).toArray();
 
             // Sort the array
-            int[] sortedArr = Utils.Util.mergesort(arrInt);
+            int[] sortedArr = com.vam404.Utils.Util.mergesort(arrInt);
 
-            // Print the largest element
-            System.out.println(sortedArr[sortedArr.length - 1]);
+            // Print the smallest element
+            System.out.println(sortedArr[0]);
         }
     }
 }
